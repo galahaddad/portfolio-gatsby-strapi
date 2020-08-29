@@ -1,4 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9b4c17ef-179e-49cf-a760-dcf8abdf4a14/deploy-status)](https://app.netlify.com/sites/portfolio-test-build/deploys)
 ## Setup Notes
 
 1. All components ready to go (including imports)
