@@ -1030,7 +1030,7 @@ Blog Template
 }
 .blog-template pre {
   background: #222;
-  color: yellow;
+  color: rgb(0, 255, 213);
   overflow-x: scroll;
   padding: 1rem 1.5rem;
   border-radius: var(--radius);
