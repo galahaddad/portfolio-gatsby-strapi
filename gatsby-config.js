@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
+    title: "Ralph Haddad",
+    description: "This is Ralph Haddad's Portfolio Site",
+    author: "@galahaddad",
+    twitterUsername: "@galahaddad",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://portfolio-test-build.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -30,25 +30,23 @@ module.exports = {
       options: {
         apiURL: `http://localhost:8888`,
         queryLimit: 1000, // Default to 100
-        // contentTypes: [`jobs`, `projects`, `blogs`, ],
-        //singleTypes:[`about` ]
         contentTypes: [`jobs`, `projects`, `blogs`],
-        //singleTypes: [`about`],
+        singleTypes: [`about`]
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Roboto`,
-    //         variants: [`400`, `700`],
-    //       },
-    //       {
-    //         family: `Open Sans`,
-    //       },
-    //     ],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Open Sans`,
+          },
+        ],
+      },
+    },
   ],
 }
